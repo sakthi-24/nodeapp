@@ -64,3 +64,38 @@ To start the application, run the below command in the terminal:
 ```bash
 npm start
 ```
+Go to your public ip address to verify whether it is sucessfully running or not.
+
+PM2 is a daemon process manager that will help you manage and keep your application online. 
+install pm2 with the npm command
+
+```bash
+npm install pm2 -g
+```
+
+ use pm2 to start our index.js application with the command below
+
+```bash
+pm2 start index.js --watch
+```
+
+Anytime there’s a changes in the code base, pull it to your local repository using git pull command.
+Restart pm2 using the command below
+
+```bash
+pm2 restart index.js
+```
+
+CLEAN UP
+  
+Stop the running application using pm2 stop <application name>
+```bash
+pm2 stop index
+```
+
+ Kill the pm2 process by running
+ ```
+ pm2 kill
+ ```
+
+Exit from the instance by running the exit command.
