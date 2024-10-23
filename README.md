@@ -54,7 +54,7 @@ git clone https://github.com/sakthi-24/nodeapp.git
 Get inside the directory and Install Packages
 
 ```bash
-cd nodejs-on-ec2
+cd nodeapp
 npm install
 ```
 
